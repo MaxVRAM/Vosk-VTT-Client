@@ -1,8 +1,8 @@
-# Kaldi Vosk Voice To Text (VTT) client
+# Vosk Voice To Text (VTT) client
 
-Vosk is an open source Voice To Text server that provides real-time voice transcription over WebSocket (and other protocols).
+[Vosk Server](https://alphacephei.com/vosk/server) is an open source Voice-To-Text server based on Vosk-API, and provides real-time voice transcription over WebSocket (and other protocols).
 
-This Python script acts as a client interface with a Vosk Voice To Text server for real-time voice transcription. It currently outputs transcription results as OSC over UDP, but the plan is to expand this much further.
+This Python script is based off their [`test_microphone.py`](https://github.com/alphacep/vosk-server/blob/master/websocket/test_microphone.py) example, and acts as a client interface with a Vosk server. It currently outputs transcription results as OSC over UDP, but the plan is to expand this much further.
 
 Please see the Vosk GitHub repo for details on the server and instructions on how to host your own:
 
@@ -40,10 +40,10 @@ docker run -d -p 2700:2700 alphacep/kaldi-en:latest
 
 To simple view the streaming transcription in the console log, run `python3 vtt.py <server_url>:<port>`, replacing <server_url> and <port> with your Vosk server details, for example:
 ```
-python3 vtt.py vtt.example.com:7800
+python3 vtt.py localhost:2700
 ```
   
 If you'd like to send the transcription via OSC, add these arguments to the run command: `-ip <osc_ip> -port <osc_port>`. These default to `localhost` and `9600`. For example:
 ```
-python3 vtt.py vtt.example.com:7800 -ip localhost -port 5110
+python3 vtt.py localhost:2700 -ip localhost -port 5110
 ```
