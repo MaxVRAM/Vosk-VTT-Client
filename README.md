@@ -17,8 +17,6 @@ Please see the Vosk GitHub repo for details on the server and instructions on ho
 - Transcription of imported audio files.
 - Visualisations and analysis (word-clouds, tables, etc).
 
----
-
 ## Dependencies
 
 ### Vosk Server
@@ -37,16 +35,12 @@ See the Vosk Server [GitHub](https://alphacephei.com/vosk/server) page for more 
 - websockets
 - python-osc
 
----
-
 ## Usage
 
 If your Vosk Server is running locally listening on the default port `2700`, you can simply run the script:
 ```
 python3 vtt_client.py
 ```
-
----
 
 ### Arguments
 
@@ -60,8 +54,6 @@ A remote Vosk Server connection might look like this:
 python3 vtt_client.py -server example.com:8089
 ```
 
----
-
 #### OSC destination
 
 - `-ip <osc_ip> -port <osc_port>`
@@ -71,8 +63,6 @@ Sending the OSC elsewhere might look like this:
 ```
 python3 vtt_client.py -ip 192.168.40.22 -port 5110
 ```
-
----
 
 #### Putting it together
 
