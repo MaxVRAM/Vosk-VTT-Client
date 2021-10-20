@@ -52,7 +52,7 @@ See the Vosk Server [GitHub](https://alphacephei.com/vosk/server) page for more 
 
 ```shell
 sudo apt install portaudio19-dev python3-pyaudio
-pip install websockets
+pip install websockets python-osc
 ```
 
 #### 2. Clone the project
@@ -96,10 +96,10 @@ git clone https://github.com/MaxVRAM/vosk_vtt_client.git
 pip install PyAudio‑0.2.11‑cp310‑cp310‑win_amd64.whl
 ```
 
-5. And finally install the `websockets` module:
+5. And finally install `websockets` and `python-osc`:
 
 ```shell
-pip install websockets
+pip install websockets python-osc
 ```
 
 #### 3. Clone the project
