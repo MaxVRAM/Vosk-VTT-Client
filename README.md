@@ -23,7 +23,7 @@ Please see the Vosk GitHub repo for details on the server and instructions on ho
 
 If you're using Docker, it's as easy as:
 
-```shell{:copy}
+```shell
 docker run -d -p 2700:2700 alphacep/kaldi-en:latest
 ```
 
@@ -50,14 +50,14 @@ See the Vosk Server [GitHub](https://alphacephei.com/vosk/server) page for more 
 
 *I had a fatal install error using the official `pip install pyaudio` on Ubuntu 20.04. The following command worked perfectly instead:*
 
-```shell{:copy}
+```shell
 sudo apt install portaudio19-dev python3-pyaudio
 pip install websockets
 ```
 
 #### 2. Clone the project
 
-```shell{:copy}
+```shell
 git clone https://github.com/MaxVRAM/vosk_vtt_client.git
 ```
 
@@ -92,19 +92,19 @@ git clone https://github.com/MaxVRAM/vosk_vtt_client.git
 3. Back in Windows command prompt, navigate to the Documents folder, using `cd Documents` if you're already in your user folder, otherwise `cd C:\Users\<your_user_name>\Documents`.
 4. Now install the module:
 
-```shell{:copy}
+```shell
 pip install PyAudio‑0.2.11‑cp310‑cp310‑win_amd64.whl
 ```
 
 5. And finally install the `websockets` module:
 
-```shell{:copy}
+```shell
 pip install websockets
 ```
 
 #### 3. Clone the project
 
-```shell{:copy}
+```shell
 git clone https://github.com/MaxVRAM/vosk_vtt_client.git
 ```
 
@@ -117,7 +117,7 @@ git clone https://github.com/MaxVRAM/vosk_vtt_client.git
 
 If your Vosk Server is running locally listening on the default port `2700`, you can simply run the script:
 
-```shell{:copy}
+```shell
 python3 vtt_client.py
 ```
 
@@ -130,7 +130,7 @@ python3 vtt_client.py
 
 A remote Vosk Server connection might look like this:
 
-```shell{:copy}
+```shell
 python3 vtt_client.py -server example.com:8089
 ```
 
@@ -141,7 +141,7 @@ python3 vtt_client.py -server example.com:8089
 
 Sending the OSC elsewhere might look like this:
 
-```shell{:copy}
+```shell
 python3 vtt_client.py -ip 192.168.40.22 -port 5110
 ```
 
@@ -149,6 +149,6 @@ python3 vtt_client.py -ip 192.168.40.22 -port 5110
 
 A full example might look like this:
 
-```shell{:copy}
+```shell
 python3 vtt_client.py -server example:8098 -ip 192.168.40.22 -port 5110
 ```
