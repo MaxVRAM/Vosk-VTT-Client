@@ -10,12 +10,12 @@ from pythonosc import udp_client
 # Argument parser config
 parser = argparse.ArgumentParser(description='This script creates a WebSocket connection with a Vosk VTT server and outputs the results via OSC.')
 
-parser.add_argument('vtt_server', type=str,
-                    help='The VTT server <URL:PORT>. Example: vtt.example-server.com:8089')
+parser.add_argument('-server', type=str, default='localhost:2700',
+                    help='VTT server <URL:PORT>. Defaults to "localhost:2700". A remote server might look like this: example-server.com:8089')
 parser.add_argument('-ip', type=str, default='localhost',
-                    help='The IP address of the OSC listener. Defaults to "localhost"')
+                    help='IP address of the OSC listener. Defaults to "localhost"')
 parser.add_argument('-port', type=int, default=9600,
-                    help='The port number of the OSC listener. Defaults to 9600')
+                    help='Port number of the OSC listener. Defaults to 9600')
 
 args = parser.parse_args()
 
