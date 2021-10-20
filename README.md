@@ -6,7 +6,7 @@ This Python script acts as a client interface with a Vosk Voice To Text server f
 
 Please see the Vosk GitHub repo for details on the server and instructions on how to host your own:
 
-[https://github.com/alphacep/vosk-api](https://github.com/alphacep/vosk-api)
+[https://github.com/alphacep/vosk-server](https://github.com/alphacep/vosk-server)
 
 ---
 
@@ -22,6 +22,12 @@ Future plans include:
 ### Dependencies
 
 **Note:** You'll need access to a Vosk VTT server. See the link at the top for details on running your own.
+
+If you're using Docker, it's as easy as:
+```
+docker run -d -p 2700:2700 alphacep/kaldi-en:latest
+```
+
 
 - Python
 - pyaudio
