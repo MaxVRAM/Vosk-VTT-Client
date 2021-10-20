@@ -80,10 +80,10 @@ async def run_test(uri):
 
 
 try:
-    print('Connecting to ws://' + args.vtt_server)
+    print('Connecting to ws://' + args.server)
     loop = asyncio.get_event_loop()
     loop.run_until_complete(
-        run_test('ws://' + args.vtt_server))
+        run_test('ws://' + args.server))
 except (Exception, KeyboardInterrupt) as e:
     loop.stop()
     loop.run_until_complete(
