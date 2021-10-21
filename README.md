@@ -56,7 +56,7 @@ See the Vosk Server [GitHub](https://alphacephei.com/vosk/server) page for more 
 
 *I had a fatal install error using the official `pip install pyaudio` on Ubuntu 20.04. The following command worked perfectly instead:*
 
-```shell
+``` shell
 sudo apt install portaudio19-dev python3-pyaudio
 pip install websockets python-osc
 ```
