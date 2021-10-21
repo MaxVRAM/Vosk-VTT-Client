@@ -11,11 +11,16 @@ Please see the Vosk GitHub repo for details on the server and instructions on ho
 ## Feature ideas
 - [x] OSC transcription output.
 - [x] Python argument parser.
-- [ ] Javascript/HTML5 interface.
-- [ ] Allowing transcriptions to be sent via RESTful API.
-- [ ] Implementing transcription retention in a database.
+- [ ] Local Vosk server integration.
 - [ ] Transcription of imported audio files.
-- [ ] Visualisations and analysis (word-clouds, tables, etc).
+- [ ] Webapp front-end:
+  - [ ] Flask / Bootstrap / SQLAlchemy stack.
+  - [ ] User authentication.
+  - [ ] Per-account transcription retention.
+- [ ] Text analysis:
+  - [ ] 
+- [ ] Visualisation:
+  - [ ] 
 
 ## Dependencies
 
