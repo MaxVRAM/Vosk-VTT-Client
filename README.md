@@ -6,6 +6,18 @@ This Python script is based off their [`test_microphone.py`](https://github.com/
 
 Please see the Vosk GitHub repo for details on the server and instructions on how to host your own: [https://github.com/alphacep/vosk-server](https://github.com/alphacep/vosk-server)
 
+## Project files
+
+- ### `vtt_client.py`
+
+  An initial example script to connect to the Vosk server via websockets and output transcription results as dictionaries via OSC.
+ 
+- ### `vtt_reminder_example.maxpat`
+
+  A Max patch to demonstrate extracting a *reminder* time (hour + am/pm) from a transcription received via OSC from the Python script. The approach uses native Max objects to do this, and results in a very convoluted patch.
+  
+  **Note:** I in no way endorse the use of Max (especially with only their native patch object library) to perform text analysis. It's simply not designed for this. If Max is required, a far better approach would be to either perform the extraction prior posting the data to Max, or by using Max's Javascript `[js]` object. 
+
 
 
 ## Feature ideas
