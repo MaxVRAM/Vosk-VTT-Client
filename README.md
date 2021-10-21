@@ -18,9 +18,10 @@ Please see the Vosk GitHub repo for details on the server and instructions on ho
   - [ ] User authentication.
   - [ ] Per-account transcription retention.
 - [ ] Text analysis:
-  - [ ] 
+  - [ ] Feature and keyword extraction
 - [ ] Visualisation:
-  - [ ] 
+  - [ ] Wordcloud, tables, charts
+  - [ ] D3.js?
 
 ## Dependencies
 
