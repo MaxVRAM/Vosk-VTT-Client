@@ -29,7 +29,7 @@ Please see the Vosk GitHub repo for details on the server and instructions on ho
 
 If you're using Docker, it's as easy as:
 
-```shell
+``` bash
 docker run -d -p 2700:2700 alphacep/kaldi-en:latest
 ```
 
