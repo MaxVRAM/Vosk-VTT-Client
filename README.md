@@ -91,16 +91,16 @@ git clone https://github.com/MaxVRAM/vosk_vtt_client.git
 
 **This will work with other versions of Python, but I've only tested it with Python 3.10.0, so that's what I'll be using as an example.**
 
-1. Head over to the [Python Releases for Windows](https://www.python.org/downloads/windows/) site and download Python 3.10.0 (64-bit) installer - or use this [direct download link](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
-2. Open the downloaded install file, **make sure the `Add Python 3.10 to PATH` option** at the bottom of the window is **checked**, then hit Install Now and wait for it to finish.
+1. Head over to the [Python Releases for Windows](https://www.python.org/downloads/windows/) page and download Python 3.10.0 (64-bit) installer - or use this [direct download link](https://www.python.org/ftp/python/3.10.0/python-3.10.0-amd64.exe)
+2. After it's done downloading and open the installer, **make sure you check the `Add Python 3.10 to PATH` option** at the bottom of the window, which makes the Python command accessable from any folder on your system. Then hit *Install Now* and wait for it to finish.
 3. Open Windows command prompt by pressing `[win] + r`, enter `cmd` in the box and hit enter.
-4. Check that Python is installed by entering `python -V` (with a capital V). It should print out `Python 3.10.0`.
+4. Check that Python is installed by entering `python -V` (with a capital V). It should print out `Python 3.10.0` or whatever version you installed.
 
 #### 2. Install the Python modules
 
 **PyAudio is not a native package on Windows, so it needs to be manually downloaded and imported from a `whl` wheel file.**
 
-1. Open up your browser, and download the matching PyAudio file for your Python version and OS - [link](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio).
+1. Download the PyAudio file that matches your Python version and OS - [link](https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio).
 
 - For example, Python 3.10.0 on Windows 10 (64-bit) would require:
   - `PyAudio‑0.2.11‑cp310‑cp310‑win_amd64.whl`
